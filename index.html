@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        img {
+            height: 30vmin;
+            width: 30vmin;
+        }
+
+        .container-image {
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .images {
+            height: 60vmin;
+            width: 60vmin;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image,
+        .image1,
+        .image2,
+        .image3 {
+            height: 30vmin;
+            width: 30vmin;
+            overflow:hidden;
+            transition: 0.25s ease;
+        }
+
+        .image:hover {
+            border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%
+        }
+
+        .image1:hover {
+            border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%
+        }
+
+        .image2:hover {
+            border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%
+        }
+
+        .image3:hover {
+            border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%
+        }
+
+        .image {
+            border-radius: 100% 0% 100% 0% / 100% 0% 0% 0%;
+        }
+
+        .image1 {
+            border-radius: 0% 100% 100% 0% / 100% 100% 0% 0%;
+        }
+
+        .image2 {
+            border-radius: 100% 0% 0% 100% / 0% 0% 100% 100%;
+        }
+
+        .image3 {
+            border-radius: 100% 0% 100% 0% / 0% 0% 100% 0%;
+        }
+        
+                            /* ↓ automated animation but not working perfectly now */
+
+        /* @keyframes anim-image {
+            0%, 100% {
+                border-radius: 100% 0% 100% 0% / 100% 0% 0% 0%;
+            }
+            50% {
+                border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+            }
+        }
+
+        @keyframes anim-image1 {
+            0%, 100% {
+                border-radius: 0% 100% 100% 0% / 100% 100% 0% 0%;
+            }
+            50% {
+                border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+            }
+        }
+
+        @keyframes anim-image2 {
+            0%, 100% {
+                border-radius: 100% 0% 0% 100% / 0% 0% 100% 100%;
+            }
+            50% {
+                border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+            }
+        }
+
+        @keyframes anim-image3 {
+            0%, 100% {
+                border-radius: 100% 0% 100% 0% / 0% 0% 100% 0%;
+            }
+            50% {
+                border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container-image">
+        <div class="images">
+            <div class="image">
+                <img src="image_part_001.jpg" alt="">
+            </div>
+            <div class="image1">
+                <img src="image_part_002.jpg" alt="">
+            </div>
+            <div class="image2">
+                <img src="image_part_003.jpg" alt="">
+            </div>
+            <div class="image3">
+                <img src="image_part_004.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
